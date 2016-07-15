@@ -1,6 +1,8 @@
 package ru.FL.Database;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  * Created by F4KEFLY on 15.07.2016.
@@ -12,5 +14,17 @@ public class DBConnector
     private final String USER = "root";
     private final String PASS = "root";
     private Connection connection;
+
+    public DBConnector(){
+        try {
+            connection = DriverManager.getConnection(HOST, USER, PASS);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Connection getConnection(){
+        return connection;
+    }
 
 }
