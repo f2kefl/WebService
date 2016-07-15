@@ -1,4 +1,4 @@
-package ru.FL.Service;
+package ru.FL;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

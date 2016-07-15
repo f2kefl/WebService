@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/out/artifacts/testWebService_war</output-path>
     <root id="archive" name="testWebService_war.war">
       <element id="artifact" artifact-name="testWebService:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.37" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

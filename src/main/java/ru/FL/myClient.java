@@ -1,7 +1,4 @@
-package ru.FL.Client;
-
-import ru.FL.Database.DBConnector;
-import ru.FL.Service.myService;
+package ru.FL;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -23,7 +20,7 @@ public class myClient
     public static void main(String[] args) throws MalformedURLException
     {
         URL url = new URL("http://localhost:8080/getArray?wsdl");
-        QName qName = new QName("http://Service.FL.ru/", "myServiceImplService");
+        QName qName = new QName("http://FL.ru/", "myServiceImplService");
         Service service = Service.create(url, qName);
         myService ms = service.getPort(myService.class);
 

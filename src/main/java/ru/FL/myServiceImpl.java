@@ -1,4 +1,4 @@
-package ru.FL.Service;
+package ru.FL;
 
 import javax.jws.WebService;
 
@@ -6,7 +6,7 @@ import javax.jws.WebService;
  * Created by F4KEFLY on 15.07.2016.
  * Description: реализация интерфейса.
  */
-@WebService(endpointInterface = "ru.FL.Service.myService")
+@WebService(endpointInterface = "ru.FL.myService")
 public class myServiceImpl implements myService
 {
     @Override

@@ -1,4 +1,4 @@
-package ru.FL.Database;
+package ru.FL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,21 +10,26 @@ import java.sql.SQLException;
  */
 public class DBConnector
 {
+
     private final String HOST = "jdbc:mysql://localhost:3306/ws_log";
     private final String USER = "root";
     private final String PASS = "root";
     private Connection connection;
 
-    public DBConnector(){
+    DBConnector()
+    {
         try {
+            Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(HOST, USER, PASS);
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    public Connection getConnection(){
+    public Connection getConnection()
+    {
         return connection;
     }
-
 }

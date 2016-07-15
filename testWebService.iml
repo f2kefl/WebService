@@ -50,5 +50,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.gmbal:gmbal-api-only:3.1.0-b001" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.external:management-api:3.0.0-b012" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.ha:ha-api:3.1.8" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:5.1.37" level="project" />
   </component>
 </module>
