@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 /**
  * Created by F4KEFLY on 15.07.2016.
- * Description:
+ * Description: класс для подключения к базе данных.
  */
 public class DBConnector
 {
